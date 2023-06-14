@@ -5,22 +5,24 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Conversor de Moedas</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='/_style/main.css'>
-    <script src='main.js'></script>
-    <header>
-        <div class="h_container">
-            <img class="img_logo" src="/_img/cifrao.png">
-            <h2 class="titulo">Conversor de Moedas</h2>
-        </div>
-    </header>
+    <link rel='stylesheet' type='text/css' media='screen' href='/_Style/main.css'>
+    <script src='/_js/main.js'></script>
 </head>
-
 <body>
+    <h1 class="titulo">
+        Conversor de Moedas
+    </h1>
     <div class="container">
-        <p class="text">Saiba qual o valor atual do dólar</p>
-        <input class="inputValor">Digite o valor aqui!</input>
-        <button class="onClick1">Converter</button>
+       
+        <p class="subtitulo">
+            Descubra os valores em dolar U$
+        </p>
+        <img class="logo" src="/_img/cifrao.png" alt="logo"><br><br>
+        <label for="moeda">Insira o valor</label><br>
+        <input type="number" id="valor" size="2"/><br>
+        <button type="submit" onclick="Converter()">Converter</button>
+
+        <h2 id="valorConvertido"></h2>
     </div>
-    
 </body>
 </html>
