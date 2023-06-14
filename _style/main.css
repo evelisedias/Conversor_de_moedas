@@ -1,34 +1,67 @@
-/* Default */
-
+/* Default Raiz*/
 :root{
-    --branco: #ffffff;
-    --preto: #000000;
-    --Gradiente: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(191,191,197,1) 35%, rgba(51,51,51,1) 100%);
-
+    --preta: #141414;
+    --vermelha: #e50914;
+    --branca: #ffffff;
+    --roxo: #46045a;
+    --gradiente: linear-gradient(90deg, rgba(250,250,255,1) 0%, rgba(154,156,157,1) 46%, rgba(184,188,189,1) 100%);
 }
 
 *{
+    margin: 0;
     padding: 0;
-    
 }
 
 body{
-    background: var(--Gradiente);
-    display: table-row;       
-}
-
-/* Header */
-
-.img_logo{
-    width: 100px;
-    border-radius: 100px;
-}
-
-.logo{
-    width: 700px;
-    align-items: center;
-    font-family: 'Times New Roman', Times, serif 
+    font-family: monospace;
+    min-height: 400px;
     
+    background-image: url(/_img/moedas.png);
+    background-size: 250vh;
+    background-repeat: no-repeat;
 }
 
+.container{
+    text-align: center;
+    padding: 20px;
+    height: 100vh;
+}
 
+h1{
+    margin-top: 100px;
+    margin-left: 225px;
+    color: var(--roxo)
+}
+
+.subtitulo{
+    margin-top: 75px;
+    font-size: 25px;
+    color: var(--branca);
+}
+.logo{
+    width: 200px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+input {
+    margin: 12px;
+    padding: 6px;
+    border-radius: 5px;
+}
+label{
+    color: var(--preta);
+    font-size: 20px
+}
+button{
+    margin-top: 12px;
+    padding: 4px 8px;
+    border-radius: 10px;
+    background: var (--branca);
+}
+
+h2{
+    margin-top: 20px;
+    color: var(--roxo);
+    font-size: 30px;
+}
